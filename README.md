@@ -9,10 +9,10 @@
 The solution is the iFood MLOps App, a ML platform designed to help data scientists to develop and deploy ML models. It 
 is composed by four main components tied together by a Python SDK: 
 
- - Sandbox: Jupyter based env to develop, train, test and deploy models;
- - Pipeline: Apache Airflow based pipeline to train, test and deploy models;
- - Database: MySQL based database to register ML experiments and predictions;
- - Serving: FastAPI based api to serve predictions.
+ - **Sandbox**: Jupyter based env to develop, train, test and deploy models;
+ - **Pipeline**: Apache Airflow based pipeline to train, test and deploy models;
+ - **Database**: MySQL based database to register ML experiments and predictions;
+ - **Serving**: FastAPI based api to serve predictions.
 
 <p align="center"><img src="docs/image/mlops-docker.png"></p>
 
