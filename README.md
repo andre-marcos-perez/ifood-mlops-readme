@@ -1,10 +1,20 @@
 # iFood MLOps Readme
 
-> Thiw repository is the documentation of my solution for the iFood ML Engineer test.
+> This repository is the documentation of my solution for the iFood ML Engineer test.
 
-## 1. Case Solution
+## 1. Solution
 
-TODO
+> Checkout the project [repository](https://github.com/andre-marcos-perez/ifood-mlops-app) to know more!
+
+The solution is the iFood MLOps App, a ML platform designed to help data scientists to develop and deploy ML models. It 
+is composed by four main components tied together by a Python SDK: 
+
+ - Sandbox: Jupyter based env to develop, train, test and deploy models;
+ - Pipeline: Apache Airflow based pipeline to train, test and deploy models;
+ - Database: MySQL based database to register ML experiments and predictions;
+ - Serving: FastAPI based api to serve predictions.
+
+<p align="center"><img src="docs/image/mlops-docker.png"></p>
 
 ## 2. Going to the Cloud
 
@@ -62,7 +72,7 @@ if __name__ == '__main__':
                     break
 ```
 
-> **Solutions:** Many possible solutions.
+> **Solution:** (Many more with non ASCII chars).
 
  - BY{BY{BY{BY{BY{BY{BY{
  - B{YB{YB{YB{YB{YB{YB{Y
