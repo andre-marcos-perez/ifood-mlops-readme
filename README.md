@@ -1,6 +1,6 @@
 # iFood MLOps Readme
 
-> This repository is the documentation of my solution for the iFood ML Engineer test.
+> This repository is the docs of my solution for the **[iFood ML Engineer test](https://github.com/ifood/ifood-data-ml-engineer-test)**.
 
 ## 1. Solution
 
@@ -18,7 +18,15 @@ is composed by four main components tied together by a Python SDK:
 
 ## 2. Going to the Cloud
 
-TODO
+The solution on the cloud leverages the low price (and the elasticity of its backend on AWS ECS) of a EKS cluster and 
+the Kubeflow ecosystem (notebooks, pipelines, etc.) to provide both the sandbox and pipeline components. The Python SDK 
+is built on the notebook base image to ease the programmatic access to the pipeline, database (Aurora) and registry 
+(S3). Production ready models and its serving code are version controlled on self hosted GitLab software (EC2) and 
+deployed via ci/cd as a dockerized microservice on a ECS cluster. This cluster is interfaced by the API gateway for the 
+end user (apps, clients, etc.). Predictions requests are load balanced (Elastic Load Balancer), cached (ElasticCache) 
+and queued (SQS) to be further persisted (Lambda + Aurora) to provide the lowest latency possible. 
+
+<p align="center"><img src="docs/image/mlops-aws.png"></p>
 
 ## 3. Bonus
 
